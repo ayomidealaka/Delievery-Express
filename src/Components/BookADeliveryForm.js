@@ -5,9 +5,12 @@ import style from './../App.css';
 const BookADeliveryForm = () => {
   return (
     <form className={style.BookADeliveryForm}>
-      <input placeholder="Pickoff" />
-      <input placeholder="Dropoff" />
-      <input placeholder="Kg"></input>
+      <span>
+        <input placeholder="Pickoff" />
+        <input placeholder="Dropoff" />
+        <input placeholder="Kg" name="kg"></input>
+      </span>
+      <button>Book a delivery.</button>
     </form>
   );
 };
